@@ -6,7 +6,7 @@ int main()
   printf("Automatic Variables and Scope\n\n");     
   {
     int x = 20, y = 30;
-    printf("Inner x = %d, y = %d", x, y);
+    printf("Inner x = %d, y = %d and %d\n", x, y, z);
   }
   printf("Outer x = %d, y = %d", x, z);
   return 0;
