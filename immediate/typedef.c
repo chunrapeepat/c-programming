@@ -2,12 +2,16 @@
 
 int main()
 {
-  typedef int noob;
-  typedef noob bobo;
+  typedef struct {
+    int age;
+    char *name;
+  } *Person;
 
-  bobo age = 200;
+  Person chun;
+  chun->name = "Chun Rapeepat";
+  chun->age = 18;
 
-  printf("%d\n", age);
+  printf("Hello my name is %s age %d\n", chun->name, chun->age);
 
   return 0;
 }
