@@ -32,3 +32,20 @@ int main(void) {
 
     return 0;
 }
+
+void insert_at_beginning(struct Node **pheadNode, char *value) {
+    struct Node *currentNode;
+    if (pheadNode == NULL) {
+        return;
+    }
+    currentNode = malloc(sizeof *currentNode);
+    currentNode->next = NULL;
+    currentNode->prev = NULL;
+    currentNode->data = value;
+    if (*pheadNode == NULL) {
+        *pheadNode = currentNode
+        return;
+    }
+    currentNode->next = *pheadNode;
+    (*pheadNode)->prev = currentNode;
+}
